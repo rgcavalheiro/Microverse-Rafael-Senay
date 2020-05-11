@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+<head>
+	<meta charset="UTF-8">
+	<title>Fork Me! FCC: Test Suite Template</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
 
-  <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-    
-    <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform</p>
-    <form id="survey-form"></form>
-    <div class="form-group">
-    	<input type="text" name="name" id="name" required>
-	<input type="email" id="email" />
-	<input type="number" id="number" >
-    </div>
+<body>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 
-    <script  src="js/index.js"></script>
-  </body>
+	<h1 id="title">freeCodeCamp Survey Form</h1>
+	<p id="description">Thank you for taking the time to help us improve the platform</p>
+	<form id="survey-form"></form>
+	<div class="form-group">
+		<label id="name-label"> Name</label>
+		<input type="text" name="name" id="name" placeholder="Enter your Name" required>
+		<label id="email-label"> Email</label>
+		<input type="email" id="email" placeholder="Enter your Email" required>
+		<label id="number-label"> Age (optional)</label>
+		<input type="number" id="number" min="1" max="120" placeholder="Age">
+	</div>
+	<select name="select" id="dropdown">
+		<option value="valor1">Valor 1</option> 
+		<option value="valor2" selected>Valor 2</option>
+		<option value="valor3">Valor 3</option>
+	</select>
+	
+
+
+
+
+	<script  src="js/index.js"></script>
+</body>
 </html>
